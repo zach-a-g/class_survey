@@ -8,9 +8,17 @@
         "db:init": "psql -f ./sql/schema.sql postgres://mwupcpfs:evaoemw73SxvHY71fRpVD9GFZi7IPa7t@batyr.db.elephantsql.com/mwupcpfs",
         "db:seed": "psql -f ./sql/seed.sql postgres://mwupcpfs:evaoemw73SxvHY71fRpVD9GFZi7IPa7t@batyr.db.elephantsql.com/mwupcpfs",
         "db:reset": "npm run db:drop; npm run db:init;",
+        "dev": "nodemon app.js",
+        "start": "node app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-es6-template-engine": "^2.2.3",
+        "pg-promise": "^10.10.2"
+    }
 }
